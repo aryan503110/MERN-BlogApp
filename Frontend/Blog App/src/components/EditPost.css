@@ -1,0 +1,83 @@
+/* Container for the entire edit post page */
+.post_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    padding: 20px;
+  }
+  
+  /* Form container */
+  .post_form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Form title */
+  .post_form h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+  }
+  
+  /* Form layout */
+  .post_form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Input and textarea styles */
+  .post_form input,
+  .post_form textarea {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .post_form input:focus,
+  .post_form textarea:focus {
+    outline: none;
+    border-color: #4299e1;
+  }
+  
+  /* Textarea specific styles */
+  .post_form textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  /* Button styles */
+  .post_form button {
+    background-color: #4299e1;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .post_form button:hover {
+    background-color: #3182ce;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .post_form {
+      padding: 1.5rem;
+    }
+    
+    .post_form h2 {
+      font-size: 1.5rem;
+    }
+  }
